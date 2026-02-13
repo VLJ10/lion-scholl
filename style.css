@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+header{
+    background-color:#3347b0 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 95px;
+    padding: 0 80px;
+}
+header img {
+    height: 65px;
+}
+
+header button{
+    height: 50px;
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+    font-size: large;
+    border: none;
+    font-size: 1.8rem;
+    outline: none;
+}
+header button i {
+    font-size: 2.7rem;
+}
+main{
+    height: 79%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+main img {
+    height: 70%;
+}
+.main-section-left{
+    width: 29%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+.main-section-left h1{
+    font-size: 3.6rem;
+    font-weight: 300;
+}
+.main-section-left img{
+    height: 30%;
+}
+.main-section-right{
+    width: 38%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.main-section-right button {
+    width: 67%;
+    height: 27%;
+    background-color: #3347b0;
+}
+
+
+footer{
+    background-color:#3347b0 ;
+    display: flex;
+    justify-content: space-around;
+    height: 140px;
+}
+.section1{
+    display: flex;
+    gap: 10px;
+}
+.container-direita{
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 30px;
+    justify-content: space-around;
+    font-size: 1.6rem;
+    font-weight: 200;
+}
+.container-esqueda{
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    color: white;
+}
+.section2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    height: auto;
+    color: white;
+    font-size: 1.7rem;
+}
+.section3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14%;
+    height: auto;
+    gap: 10px;
+}
+.section3 button{
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid white;
+    outline: white;
+    font-size: 2rem;
+    font-weight: 100;
+
+}
