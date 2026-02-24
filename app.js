@@ -8,24 +8,12 @@ async function buscarNomeCurso() {
 
 async function nomeBotao(dadosCurso) {
 
-    const botaoDS = document.getElementById('botao1')
-    const botaoRedes = document.getElementById('botao2')
 
-    const iconeDS = document.createElement('i')
-    iconeDS.className = "fa-solid fa-code"
-
-    const textoDS = document.createElement('p')
-    textoDS.textContent = dadosCurso[0].sigla
-
-    const iconeRedes = document.createElement('i')
-    iconeRedes.className = "fa-solid fa-sitemap"
-
-    botaoDS.replaceChild()
-    botaoDS.appendChild(iconeDS);
-    botaoDS.appendChild(textoDS);
 
 }
 async function conteudomain() {
+
+    const nomeCurso = await buscarNomeCurso()
 
     const main = document.getElementById('main')
 
@@ -51,29 +39,32 @@ async function conteudomain() {
     mainSectionRight.className = 'main-section-right'
 
     const botaoDS = document.createElement('button')
+    botaoDS.className = 'botao-ds'
     const iconeDS = document.createElement('i')
     iconeDS.className = "fa-solid fa-code"
     iconeDS.style.color = 'white'
+    const textDS = await nomeCurso[0].sigla
 
-    botaoDS.append(iconeDS)
-
+    botaoDS.append(iconeDS, textDS)
 
     const botaoRedes = document.createElement('button')
     const iconeRedes = document.createElement('i')
     iconeRedes.className = "fa-solid fa-sitemap"
     iconeRedes.style.color = 'white'
+    const textRedes = await nomeCurso[1].sigla
 
-    botaoRedes.append(iconeRedes)
-
-    const imagenTa = document.createElement('img')
-    const imagenTab = document.createElement('img')
-    const imagenTabl = document.createElement('img')
-    const imagenTable = document.createElement('img')
+    botaoRedes.append(iconeRedes, textRedes)
 
     mainSectionLeft.append(titulo, imagenTablet)
     mainSectionRight.append(botaoDS, botaoRedes)
     main.append(mainSectionLeft, imagenAluna, mainSectionRight)
-
+    
+    botaoDS.addEventListener('click', () => {
+        main.replaceChildren()
+    })
+    botaoRedes.addEventListener('click', () => {
+        main.replaceChildren()
+    })
 
 }
 conteudomain()

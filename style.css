@@ -17,10 +17,16 @@ header{
 header img {
     height: 65px;
 }
+.botoes{
+    display: flex;
+    justify-content: center;
+}
 
 header button{
     height: 50px;
-    width: 120px;
+    width: auto;
+    padding: 0 10px;
+    margin: 0 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,10 +36,29 @@ header button{
     border: none;
     font-size: 1.8rem;
     outline: none;
+
 }
+header button i:hover {
+    transform: translateY(-3px); 
+    color: rgb(255, 215, 0);
+  }
 header button i {
+    cursor: pointer;
     font-size: 2.7rem;
+    border-radius: 3px;
+    transition: all 0.3s ease;
 }
+.btn-sair {
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+.btn-sair:hover {
+    transform: translateY(-3px); 
+    background-color: red;
+    color: black;
+  }
 main{
     height: 79%;
     width: 100%;
@@ -73,6 +98,27 @@ main img {
     width: 67%;
     height: 27%;
     background-color: #3347b0;
+    font-size: 5rem;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 10px 10px 1px rgba(70, 93, 221, 0.3);
+
+    transition: all 0.3s ease;
+}
+
+.main-section-right button:hover {
+    transform: translateY(-3px); /* sobe um pouco */
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+  }
+.botao-ds{
+    padding: 0% 14%;
 }
 
 
